@@ -7,7 +7,7 @@ services:
     volumes:
       - ./acme.sh/:/acme.sh/
     command: |
-      --issue --dns -d *.shubhamtatvamasi.com
+      --issue --dns -d *.shubhamtatvamasi.com -d shubhamtatvamasi.com
       --yes-I-know-dns-manual-mode-enough-go-ahead-please
   renew:
     container_name: letsencrypt
@@ -15,6 +15,6 @@ services:
     volumes:
       - ./acme.sh/:/acme.sh/
     command: |
-      --renew -d *.shubhamtatvamasi.com
+      --renew -d *.shubhamtatvamasi.com -d shubhamtatvamasi.com
       --yes-I-know-dns-manual-mode-enough-go-ahead-please
 ...
