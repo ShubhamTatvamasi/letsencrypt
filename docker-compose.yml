@@ -9,6 +9,6 @@ services:
   renew:
     image: neilpang/acme.sh
     command: |
-      --issue --dns -d *.shubhamtatvamasi.com
+      --renew -d *.shubhamtatvamasi.com
       --yes-I-know-dns-manual-mode-enough-go-ahead-please
 ...
