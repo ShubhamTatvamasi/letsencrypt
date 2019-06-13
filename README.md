@@ -5,7 +5,7 @@ issue certificate:
 docker-compose run issue
 ```
 
-create a new TXT record in your domain provider
+create two TXT record in your domain provider
 ```
 Type: TXT
 Host: _acme-challenge
@@ -19,7 +19,7 @@ docker-compose run renew
 
 Copy `fullcahin.cer` and `*.shubhamtatvamasi.com.key` in your sever.
 
-for deleting all container run:
+for deleting all containers run:
 ```
 docker-compose down
 ```
