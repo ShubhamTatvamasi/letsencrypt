@@ -16,3 +16,5 @@ renew certificate
 ```
 docker-compose run renew
 ```
+
+Copy `fullcahin.cer` and `*.shubhamtatvamasi.com.key` in your sever.
