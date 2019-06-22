@@ -12,6 +12,10 @@ Host: _acme-challenge
 TXT Value: <check-console-output>
 ```
 
+Check the updated TXT values:
+
+https://mxtoolbox.com/SuperTool.aspx?action=txt%3a_acme-challenge.shubhamtatvamasi.com
+
 renew certificate:
 ```
 docker-compose run renew
