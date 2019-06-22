@@ -16,5 +16,5 @@ services:
       - ./acme.sh/:/acme.sh/
     command: |
       --renew -d *.shubhamtatvamasi.com -d shubhamtatvamasi.com
-      --yes-I-know-dns-manual-mode-enough-go-ahead-please
+      --yes-I-know-dns-manual-mode-enough-go-ahead-please --force
 ...
