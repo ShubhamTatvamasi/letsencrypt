@@ -9,6 +9,7 @@ services:
     command: |
       --issue --dns -d *.shubhamtatvamasi.com -d shubhamtatvamasi.com
       --yes-I-know-dns-manual-mode-enough-go-ahead-please
+      --keylength ec-384
   renew:
     container_name: letsencrypt
     image: neilpang/acme.sh
@@ -17,4 +18,9 @@ services:
     command: |
       --renew -d *.shubhamtatvamasi.com -d shubhamtatvamasi.com
       --yes-I-know-dns-manual-mode-enough-go-ahead-please --force
+      --ecc
+  help:
+    container_name: letsencrypt
+    image: neilpang/acme.sh
+    command: --help   
 ...

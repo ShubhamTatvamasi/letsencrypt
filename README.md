@@ -21,6 +21,11 @@ renew certificate:
 docker-compose run renew
 ```
 
+get help:
+```
+docker-compose run help
+```
+
 Copy `fullcahin.cer` and `*.shubhamtatvamasi.com.key` to your sever.
 
 for deleting all containers run:
