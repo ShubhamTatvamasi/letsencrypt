@@ -22,5 +22,5 @@ services:
   help:
     container_name: letsencrypt
     image: neilpang/acme.sh
-    command: --help   
+    command: --help
 ...
