@@ -4,21 +4,16 @@ services:
   issue:
     container_name: letsencrypt
     image: neilpang/acme.sh
+    env_file:
+      - godaddy.keys
     volumes:
       - ./acme.sh/:/acme.sh/
     command: |
       --issue -d *.shubhamtatvamasi.com -d shubhamtatvamasi.com
-      --yes-I-know-dns-manual-mode-enough-go-ahead-please
-      --keylength ec-384 --dns
-  renew:
-    container_name: letsencrypt
-    image: neilpang/acme.sh
-    volumes:
-      - ./acme.sh/:/acme.sh/
-    command: |
-      --renew -d *.shubhamtatvamasi.com -d shubhamtatvamasi.com
-      --yes-I-know-dns-manual-mode-enough-go-ahead-please
-      --ecc --force
+      --always-force-new-domain-key
+      --keylength ec-384
+      --dns dns_gd
+      --force
   help:
     container_name: letsencrypt
     image: neilpang/acme.sh
