@@ -18,3 +18,8 @@ for deleting all containers run:
 ```
 docker-compose down
 ```
+---
+
+Check Certificate transparency
+
+https://transparencyreport.google.com/https/certificates
