@@ -11,7 +11,7 @@ services:
     command: |
       --issue -d *.shubhamtatvamasi.com -d shubhamtatvamasi.com
       --always-force-new-domain-key
-      --keylength ec-384
+      --keylength ec-256
       --dns dns_gd
       --force
   help:
