@@ -9,7 +9,9 @@ services:
     volumes:
       - ./acme.sh/:/acme.sh/
     command: |
-      --issue -d *.shubhamtatvamasi.com -d shubhamtatvamasi.com
+      --issue
+      -d shubhamtatvamasi.com
+      -d *.shubhamtatvamasi.com
       --always-force-new-domain-key
       --keylength ec-256
       --dns dns_gd
