@@ -12,6 +12,7 @@ services:
       --issue
       -d shubhamtatvamasi.com
       -d *.shubhamtatvamasi.com
+      -d *.k8s.shubhamtatvamasi.com
       --always-force-new-domain-key
       --keylength ec-256
       --dns dns_gd
