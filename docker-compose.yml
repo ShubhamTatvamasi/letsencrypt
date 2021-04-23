@@ -13,6 +13,8 @@ services:
       -d shubhamtatvamasi.com
       -d *.shubhamtatvamasi.com
       -d *.k8s.shubhamtatvamasi.com
+      -d *.magma.shubhamtatvamasi.com
+      -d *.nms.magma.shubhamtatvamasi.com
       --always-force-new-domain-key
       --keylength ec-256
       --dns dns_gd
