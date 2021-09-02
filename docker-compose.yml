@@ -2,7 +2,6 @@
 version: "3"
 services:
   issue:
-    container_name: letsencrypt
     image: neilpang/acme.sh
     env_file:
       - godaddy.keys
@@ -16,11 +15,11 @@ services:
       -d *.magma.shubhamtatvamasi.com
       -d *.nms.magma.shubhamtatvamasi.com
       --always-force-new-domain-key
+      --server letsencrypt
       --keylength ec-256
       --dns dns_gd
       --force
   help:
-    container_name: letsencrypt
     image: neilpang/acme.sh
     command: --help
 ...
