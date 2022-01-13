@@ -4,8 +4,8 @@ Add API key of your domain provider.
 
 Create a file `godaddy.keys` and add following keys:
 ```bash
-GD_Key="sdfsdfsdfljlbjkljlkjsdfoiwje"
-GD_Secret="asdfsdafdsfdsfdsfdsfdsafd"
+GD_Key="xxxxxxxxxxxxxxxxxxxxxxxxxxx"
+GD_Secret="xxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ```
 
 https://github.com/acmesh-official/acme.sh/wiki/dnsapi#4-use-godaddycom-domain-api-to-automatically-issue-cert
