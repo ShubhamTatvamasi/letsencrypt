@@ -12,8 +12,6 @@ services:
       -d shubhamtatvamasi.com
       -d *.shubhamtatvamasi.com
       -d *.k8s.shubhamtatvamasi.com
-      -d *.magma.shubhamtatvamasi.com
-      -d *.nms.magma.shubhamtatvamasi.com
       --always-force-new-domain-key
       --server letsencrypt
       --keylength ec-384
