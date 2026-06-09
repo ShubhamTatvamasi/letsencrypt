@@ -16,7 +16,7 @@ services:
       -d *.nms.magma.shubhamtatvamasi.com
       --always-force-new-domain-key
       --server letsencrypt
-      --keylength ec-256
+      --keylength ec-384
       --dns dns_gd
       --force
   help:
