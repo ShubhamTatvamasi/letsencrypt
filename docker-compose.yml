@@ -11,6 +11,7 @@ services:
       --issue
       -d shubhamtatvamasi.com
       -d *.shubhamtatvamasi.com
+      -d *.k7s.shubhamtatvamasi.com
       -d *.k8s.shubhamtatvamasi.com
       --always-force-new-domain-key
       --server letsencrypt
