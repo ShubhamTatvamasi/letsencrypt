@@ -13,6 +13,7 @@ services:
       -d *.shubhamtatvamasi.com
       -d *.k7s.shubhamtatvamasi.com
       -d *.k8s.shubhamtatvamasi.com
+      -d *.k9s.shubhamtatvamasi.com
       --always-force-new-domain-key
       --server letsencrypt
       --keylength ec-384
